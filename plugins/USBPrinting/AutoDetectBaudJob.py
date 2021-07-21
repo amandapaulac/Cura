@@ -23,7 +23,7 @@ class AutoDetectBaudJob(Job):
     def run(self) -> None:
         Logger.log("d", "Auto detect baud rate started.")
         wait_response_timeouts = [3, 15, 30]
-        wait_bootloader_times = [1.5, 5, 15]
+        wait_bootloader_times = [5, 15, 30]
         write_timeout = 3
         read_timeout = 3
         tries = 2
